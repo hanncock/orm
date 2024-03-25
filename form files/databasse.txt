@@ -1,0 +1,15 @@
+create database information;
+
+use information;
+
+create table mentors(
+    id int(6) primary key not null auto_increment,
+     varchar(20) not null,
+    lName varchar(20) not null,
+    gender varchar(10) not null,
+    mentor_gender varchar(10) not null,
+    language varchar(30) not null,
+    personal_info varchar(100) not null,
+    five_year_expectation varchar(100) not null,
+    mentoring_expectation varchar(100) not null
+);fName

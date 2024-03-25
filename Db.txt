@@ -1,0 +1,30 @@
+create database Sys;
+
+use Sys;
+
+create table Companies(
+    id int primary key not null auto_increment,
+    C_Name varchar (60) not null,
+    C_RegNo varchar (30) not null,
+    C_TaxPin varchar (30) not null unique,
+    C_Postal varchar (30) not null,
+    C_Email varchar (30) not null,
+    C_Phone int(12)not null,
+    Modules varchar(30)not null,
+    
+);
+
+create table Users(
+    id int primary key not null auto_increment,
+    F_Name varchar(20) not null,
+    s_Name varchar(20) not null,
+    O_Name varchar(20) not null,
+    ID_Pspt varchar(25) not null,
+    Gender varchar(5) not null,
+    Postal varchar(20) not null,
+    Phone_Num int (15) not null,
+    Email varchar(30) not null,
+    Username varchar(30)not null,
+    Password varchar(30) not null,
+    AcessLevel varchar(30) not null
+);
